@@ -15,13 +15,14 @@ import DashboardLayout from 'src/layouts/DashboardLayout'
 const Routes = () => {
   return (
     <Router>
+      <Route path="/login" page={LoginPage} name="login" />
       <Set wrap={[DashboardLayout]}>
-        <Route path="/dashboard" page={DashboardPage} name="dashboard" />
+        <Route path="/dashboard" page={DashboardPage} name="dashboard" prerender />
       </Set>
       <Set wrap={[LandingLayout]}>
-        <Route path="/" page={LandingPage} name="landing" />
+        <Route path="/" page={LandingPage} name="landing" prerender />
       </Set>
-      <Route notfound page={NotFoundPage} />
+      <Route notfound page={NotFoundPage} prerender />
     </Router>
   )
 }
