@@ -15,10 +15,19 @@ functions = "api/dist/functions"
   # Point your browser to this port to access your RedwoodJS app
   port = 8888
 
+## @MARK Is this respected? 👇
+[[redirects]]
+  from = "/bazinga"
+  to = "/login"
+  status = 307
+  force = true
+  query = {path = ":path"}
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
 
 [[redirects]]
   from = "/api"
