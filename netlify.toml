@@ -16,15 +16,15 @@ functions = "api/dist/functions"
   port = 8888
 
 ## @MARK Is this respected? 👇
-[[redirects]]
-  from = "/bazinga"
-  to = "/login"
-  status = 302
-  force = true
+# [[redirects]]
+#   from = "/bazinga"
+#   to = "/login"
+#   status = 302
+#   force = true
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/200.html"
   status = 200
 
 
