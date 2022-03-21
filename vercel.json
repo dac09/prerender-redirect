@@ -1,0 +1,5 @@
+{
+  "builds": [
+    { "src": "package.json", "use": "https://bazinga-sg.s3.ap-southeast-1.amazonaws.com/vercel-redwood-v1.0.0-canary.2.tgz" }
+  ]
+}
