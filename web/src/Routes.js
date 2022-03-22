@@ -15,6 +15,7 @@ import DashboardLayout from 'src/layouts/DashboardLayout'
 const Routes = () => {
   return (
     <Router>
+      <Route path="/nested/hello" page={NestedPage} name="nested" prerender />
       <Route path="/login" page={LoginPage} name="login" />
       <Set wrap={[DashboardLayout]}>
         <Route path="/dashboard" page={DashboardPage} name="dashboard" prerender />
