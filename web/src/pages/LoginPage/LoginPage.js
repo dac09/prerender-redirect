@@ -1,4 +1,3 @@
-import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 
 const LoginPage = () => {
@@ -13,7 +12,10 @@ const LoginPage = () => {
               <div className="row-span-4 row-start-2 text-4xl">
                 Sign In
                 <div className="pt-10 pr-20">
-                  <label className="font-sans text-sm font-medium">
+                  <label
+                    htmlFor="username"
+                    className="font-sans text-sm font-medium"
+                  >
                     Username
                   </label>
                   <input
@@ -24,7 +26,10 @@ const LoginPage = () => {
                   />
                 </div>
                 <div className="pt-2 pr-20">
-                  <label className="font-sans text-sm font-medium">
+                  <label
+                    htmlFor="password"
+                    className="font-sans text-sm font-medium"
+                  >
                     Password
                   </label>
                   <input
@@ -64,12 +69,6 @@ const LoginPage = () => {
             {/* Aquí iría algún comentario */}
           </div>
         </div>
-        <style
-          dangerouslySetInnerHTML={{
-            __html:
-              "    .banner {        background: url( 'https://s1.1zoom.me/b6058/448/Dogs_Svetlana_Shelemeteva_Hug_Little_girls_568770_1920x1080.jpg' );        background-repeat: no-repeat;        background-size: cover            }",
-          }}
-        />
       </div>
     </>
   )
